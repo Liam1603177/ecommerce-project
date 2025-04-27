@@ -175,13 +175,13 @@ export default function AdminPage() {
       </form>
 
       {/* Lista de productos */}
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         {products.length === 0 ? (
           <p>No hay productos disponibles.</p>
         ) : (
           products.map((product) => (
-            <div key={product.id} className="bg-white p-4 rounded-lg shadow-md">
-              <h2 className="text-xl font-semibold">{product.name}</h2>
+            <div key={product.id} className="bg-black p-4 rounded-lg shadow-md">
+              <h2 className="text-xl font-semibold ">{product.name}</h2>
               <p>{product.description}</p>
               <p>Precio: ${product.price}</p>
               <p>Stock: {product.stock}</p>
